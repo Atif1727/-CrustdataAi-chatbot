@@ -7,7 +7,6 @@ import os
 
 
 class CrustData:
-
     def __init__(self, source_directory):
         super(CrustData, self).__init__()
         if "messages" not in st.session_state:

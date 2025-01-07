@@ -1,0 +1,61 @@
+# Build Challenge Level 0: CrustData Chatbot
+
+This project implements a chatbot using a Retrieval-Augmented Generation (RAG) system. The RAG system is powered by the LangChain framework for retrieval and orchestration, and FAISS (Facebook AI Similarity Search) as the vector database for storing and querying vector embeddings of document text files.
+
+## Features
+- RAG-based architecture for efficient information retrieval.
+- Document embedding storage and retrieval using FAISS vector database.
+- Simple web-based interface powered by Streamlit.
+
+---
+
+## Getting Started
+
+### Prerequisites
+Before you begin, ensure you have the following:
+- Python installed (version 3.7 or higher).
+- A virtual environment tool like `venv` or `conda`.
+
+### Setting Up the Environment
+Follow these steps to set up and run the project:
+
+1. **Create a Python Virtual Environment**
+   Open your terminal or command prompt and run:
+   ```bash
+   python -m venv myenv
+   ```
+   Activate the environment:
+   - On Windows:
+     ```bash
+     myenv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source myenv/bin/activate
+     ```
+
+2. **Install Dependencies**
+   Once the virtual environment is activated, install the necessary dependencies from the `requirements.txt` file:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Application**
+   Start the Streamlit server by running the following command in your terminal:
+   ```bash
+   streamlit run server.py
+   ```
+
+4. **Access the Web Application**
+   After running the server, you can test the chatbot web application by visiting the following URL:
+
+   ### **[CrustData Web App](https://crustdata.streamlit.app/)**
+
+---
+
+## Notes
+- Ensure that your `requirements.txt` includes all necessary packages, such as Streamlit, LangChain, FAISS, and others.
+- Update your document text files in the `data/` directory to customize the chatbot’s knowledge base.
+
+Feel free to explore and customize the project as needed. Enjoy building with CrustData!
+
