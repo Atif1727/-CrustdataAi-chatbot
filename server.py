@@ -95,15 +95,12 @@ class CrustData:
             st.title("API Key Setup:")
 
             # Input fields for API keys
-            openai_key = st.text_input(
-                "Enter your OpenAI API Key:", type="password")
             groq_key = st.text_input(
                 "Enter your Groq API Key:", type="password")
 
             if st.button("Submit API Keys"):
-                if openai_key and groq_key:
+                if groq_key:
                     # Set the keys in the environment variables
-                    os.environ["OPENAI_API_KEY"] = openai_key
                     os.environ["GROQ_API_KEY"] = groq_key
                     st.success("API keys have been set successfully!")
                 else:
